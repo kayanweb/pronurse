@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { useAuth } from '@context/auth-context'
-import { useLang } from '@context/lang-context'
-import { Button } from '@components/ui/button'
-import { Input } from '@components/ui/input'
-import { Label } from '@components/ui/label'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs'
+import { useAuth } from '@/contexts/auth-context'
+import { useLang } from '@/contexts/lang-context'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { LogIn, Chrome } from 'lucide-react'
 
 export default function LoginPage() {
