@@ -177,22 +177,9 @@ export default function LoginPage() {
                     </span>
                   )}
                 </Button>
-                    : <GoogleIcon />
-                  }
-                  <span className="font-medium">{isAr ? 'الدخول عبر Google' : 'Continue with Google'}</span>
-                </Button>
-                <p className="text-xs text-center text-muted-foreground px-4">
-                  {isAr ? 'يتطلب ضبط Firebase — راجع ملف .env.local' : 'Requires Firebase setup — see .env.local file'}
-                </p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-
-        <p className="text-center text-xs text-muted-foreground">
-          {isAr ? 'نظام إدارة التمريض ©' : 'PRO Nurse ©'} {new Date().getFullYear()}
-        </p>
-      </div>
-    </div>
+\n<Button type="button" variant="outline" className="w-full gap-3 h-11 border-2 hover:border-teal-500 hover:bg-teal-50 dark:hover:bg-teal-950 transition-all" onClick={handleGoogle} disabled={!googleLoading}>
+  <Chrome className="h-5 w-5 text-teal-600" />
+  {isAr ? "تسجيل الدخول عبر جوجل" : "Continue with Google"}
+</Button>
   )
 }
