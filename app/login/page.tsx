@@ -177,23 +177,6 @@ export default function LoginPage() {
                     </span>
                   )}
                 </Button>
-              </div>
-            )}
-
-            {tab === 'google' && (
-              <div className="space-y-4 py-2">
-                <p className="text-sm text-center text-muted-foreground">
-                  {isAr ? 'سجّل دخولك باستخدام حساب Google الخاص بك' : 'Sign in using your Google account'}
-                </p>
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="w-full gap-3 h-11 border-2 hover:border-teal-500 hover:bg-teal-50 dark:hover:bg-teal-950 transition-all"
-                  onClick={handleGoogle}
-                  disabled={googleLoading}
-                >
-                  {googleLoading
-                    ? <span className="h-5 w-5 animate-spin rounded-full border-2 border-teal-600 border-t-transparent" />
                     : <GoogleIcon />
                   }
                   <span className="font-medium">{isAr ? 'الدخول عبر Google' : 'Continue with Google'}</span>
