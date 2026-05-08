@@ -22,8 +22,8 @@ import {
 } from '@components/ui/select'
 import { Badge } from '@components/ui/badge'
 import { toast } from 'sonner'
-import { useLang } from '@contexts/lang-context'
-import { DEMO_EMPLOYEES } from '@contexts/auth-context'
+import { useLang } from '@context/lang-context'
+import { DEMO_EMPLOYEES } from '@context/auth-context'
 
 interface Props {
   open: boolean

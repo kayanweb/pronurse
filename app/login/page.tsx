@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { useAuth } from '@contexts/auth-context'
-import { useLang } from '@contexts/lang-context'
+import { useAuth } from '@context/auth-context'
+import { useLang } from '@context/lang-context'
 import { Button } from '@components/ui/button'
 import { Input } from '@components/ui/input'
 import { Label } from '@components/ui/label'
