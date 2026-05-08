@@ -315,3 +315,12 @@ export function RequirePermission({
   if (!can(permission)) return <>{fallback}</>
   return <>{children}</>
 }
+
+// Demo employees for development/preview
+export const DEMO_EMPLOYEES = [
+  { id: '1', name: 'Sarah Johnson', role: 'head_nurse', phone: '+201001234567' },
+  { id: '2', name: 'Ahmed Hassan', role: 'supervisor', phone: '+201002345678' },
+  { id: '3', name: 'Fatima Ali', role: 'staff', phone: '+201003456789' },
+  { id: '4', name: 'Mohamed Ibrahim', role: 'staff', phone: '+201004567890' },
+  { id: '5', name: 'Nada Khaled', role: 'staff', phone: '+201005678901' },
+];
